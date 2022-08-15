@@ -1,7 +1,7 @@
 import requests
-from framework.utils.data_parser import DataSetParser
+from framework.utils.dataset_parser import DataSetParser
 from framework.utils.chekcers import check_sorted_by, check_if_json, empty_check
-from framework.utils.cfg_parser import ConfigParser
+from framework.utils.config_parser import ConfigParser
 
 
 class API:
