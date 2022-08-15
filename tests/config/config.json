@@ -1,6 +1,6 @@
 {
   "host_api": "http://localhost:9090/api/",
-  "host_ui": "http://localhost:9090/web/",
+  "host_ui": "http://login:password@localhost:9090/web/",
   "browser": "chrome",
   "lang": "en",
   "implicitly_wait_sec": 0,

@@ -16,7 +16,7 @@ class Logger(object):
     __logger = logging.getLogger("Logger")
     logging.basicConfig(level=logging.INFO, filemode='w',
                         format='%(asctime)s - %(levelname)s - %(message)s',
-                        datefmt='%d-%m-%y %H:%M:%S', filename="artifacts/logs.txt")
+                        datefmt='%d-%m-%y %H:%M:%S', filename="logs.txt")
 
     @staticmethod
     def set_level(level):
