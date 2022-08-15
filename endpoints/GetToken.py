@@ -8,7 +8,3 @@ class Token(API):
     def get_token(self):
         self.get(self.ENDPOINT)
         return self.get_json()
-
-
-t = Token()
-print(t.get_token())
