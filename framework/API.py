@@ -37,6 +37,3 @@ class API:
 
     def get_cookie(self):
         return self._response.text
-
-    def get_cook(self):
-        return s
