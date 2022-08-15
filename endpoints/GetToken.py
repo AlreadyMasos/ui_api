@@ -1,4 +1,4 @@
-from framework import API
+from framework.API import API
 
 
 class Token(API):
@@ -6,5 +6,9 @@ class Token(API):
     ENDPOINT = 'token/get'
 
     def get_token(self):
-        self.get(self.ENDPOINT)
-        return self.get_json()
+        self.post(self.ENDPOINT+'?variant=2')
+        return self.get_cookie()
+
+
+m = Token()
+print(m.get_token())

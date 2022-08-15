@@ -12,10 +12,10 @@ class API:
         self._response = None
 
     def get(self, endpoint):
-        self._response = requests.get(self.cfg['base_url'] + endpoint)
+        self._response = requests.get(self.cfg['host_api'] + endpoint)
 
     def post(self, endpoint, data=None):
-        self._response = requests.post(url=self.cfg['base_url']+endpoint, data=data)
+        self._response = requests.post(url=self.cfg['host_api']+endpoint, data=data)
 
     def get_status_code(self):
         return self._response.status_code
@@ -31,3 +31,7 @@ class API:
 
     def check_empty(self):
         return empty_check(self._response)
+
+    def get_cookie(self):
+        return self._response.text
+
