@@ -4,6 +4,7 @@ from endpoints.firstProjectJSON import firstProjJson
 from endpoints.GetToken import Token
 from framework.API import API
 from page_objects.projectsPage import ProjectsPage
+from page_objects.nexagePage import NexagePage
 
 CONFIG = ConfigParser().get_config()
 
@@ -21,5 +22,10 @@ def test():
     projects_page = ProjectsPage()
     projects_page.click_nexage_button()
     first = firstProjJson()
-    get = first.get_json_tests()
-    print(get)
+    #get = first.get_json_tests()
+    #print(get)
+    nex_Page = NexagePage()
+    print(nex_Page.get_test_names())
+    print(nex_Page.get_data_time())
+    print(nex_Page.check_if_dates_sorted())
+

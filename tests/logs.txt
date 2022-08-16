@@ -1,9 +1,9 @@
-15-08-22 22:25:27 - INFO - Инициализация драйвера для браузера chrome
-15-08-22 22:25:27 - INFO - 
+16-08-22 12:42:57 - INFO - Инициализация драйвера для браузера chrome
+16-08-22 12:42:57 - INFO - 
 
-15-08-22 22:25:27 - INFO - ====== WebDriver manager ======
-15-08-22 22:25:27 - INFO - Current google-chrome version is 104.0.5112
-15-08-22 22:25:27 - INFO - Get LATEST driver version for 104.0.5112
-15-08-22 22:25:27 - INFO - Driver [C:\Users\User\.wdm\drivers\chromedriver\win32\104.0.5112.79\chromedriver.exe] found in cache
-15-08-22 22:25:29 - INFO - Изменение url страницы на http://login:password@localhost:9090/web/
-15-08-22 22:25:29 - INFO - click: Щелчок по элемету 'nex_button Button'
+16-08-22 12:42:57 - INFO - ====== WebDriver manager ======
+16-08-22 12:42:57 - INFO - Current google-chrome version is 104.0.5112
+16-08-22 12:42:57 - INFO - Get LATEST driver version for 104.0.5112
+16-08-22 12:42:57 - INFO - Driver [C:\Users\User\.wdm\drivers\chromedriver\win32\104.0.5112.79\chromedriver.exe] found in cache
+16-08-22 12:42:58 - INFO - Изменение url страницы на http://login:password@localhost:9090/web/
+16-08-22 12:42:58 - INFO - click: Щелчок по элемету 'nex_button Button'

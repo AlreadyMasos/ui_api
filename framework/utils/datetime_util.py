@@ -36,3 +36,9 @@ class DatetimeUtil(object):
                 max_start = starts[i]
                 max_end = ends[i]
         return max_start, max_end
+
+    @staticmethod
+    def check_if_dates_sorted(list_of_strings):
+        list_of_dates = [datetime.strptime(dt, '%Y-%m-%d %H:%M:%S.%f') for dt in list_of_strings]
+        sorted_dates = sorted(list_of_dates)[::-1]
+        return list_of_dates == sorted_dates
