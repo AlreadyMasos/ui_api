@@ -163,3 +163,7 @@ class Browser(metaclass=Singleton):
         except TimeoutException:
             return False
         return True
+
+    def add_cookie(self, cookie_name, cookie_value):
+        self.get_driver().add_cookie({'name': cookie_name,
+                                      'value': cookie_value})

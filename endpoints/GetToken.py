@@ -8,7 +8,3 @@ class Token(API):
     def get_token(self):
         self.post(self.ENDPOINT+'?variant=2')
         return self.get_cookie()
-
-
-m = Token()
-print(m.get_token())

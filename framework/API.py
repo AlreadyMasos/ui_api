@@ -36,4 +36,4 @@ class API:
         return empty_check(self._response)
 
     def get_cookie(self):
-        return self._response.text
+        return self._response.text.upper()

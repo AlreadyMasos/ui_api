@@ -1,9 +1,19 @@
-16-08-22 12:42:57 - INFO - Инициализация драйвера для браузера chrome
-16-08-22 12:42:57 - INFO - 
+16-08-22 17:44:56 - INFO - Инициализация драйвера для браузера chrome
+16-08-22 17:44:56 - INFO - 
 
-16-08-22 12:42:57 - INFO - ====== WebDriver manager ======
-16-08-22 12:42:57 - INFO - Current google-chrome version is 104.0.5112
-16-08-22 12:42:57 - INFO - Get LATEST driver version for 104.0.5112
-16-08-22 12:42:57 - INFO - Driver [C:\Users\User\.wdm\drivers\chromedriver\win32\104.0.5112.79\chromedriver.exe] found in cache
-16-08-22 12:42:58 - INFO - Изменение url страницы на http://login:password@localhost:9090/web/
-16-08-22 12:42:58 - INFO - click: Щелчок по элемету 'nex_button Button'
+16-08-22 17:44:56 - INFO - ====== WebDriver manager ======
+16-08-22 17:44:56 - INFO - Current google-chrome version is 104.0.5112
+16-08-22 17:44:56 - INFO - Get LATEST driver version for 104.0.5112
+16-08-22 17:44:56 - INFO - Driver [C:\Users\User\.wdm\drivers\chromedriver\win32\104.0.5112.79\chromedriver.exe] found in cache
+16-08-22 17:44:58 - INFO - Изменение url страницы на http://login:password@localhost:9090/web/
+16-08-22 17:44:58 - INFO - Перезагрузка страницы
+16-08-22 17:44:58 - INFO - Проверка, открыта ли страница ProjectsPage
+16-08-22 17:44:58 - INFO - Ожидание загрузки страницы ProjectsPage с помощью js
+16-08-22 17:44:58 - INFO - Вызов метода  return document.readyState
+16-08-22 17:44:58 - INFO - click: Щелчок по элемету 'nex_button Button'
+16-08-22 17:45:04 - INFO - click: Щелчок по элемету 'add_button Button'
+16-08-22 17:45:04 - INFO - Переключение на новое окно 
+16-08-22 17:45:04 - INFO - input_name: установленый текст OoTepgjNTfrMbwA
+16-08-22 17:45:04 - INFO - click: Щелчок по элемету 'save_button Button'
+16-08-22 17:45:04 - INFO - Переключение на окно с именем CDwindow-9CA1B99470E9B1DBB43716806DD21B47
+16-08-22 17:45:04 - INFO - Перезагрузка страницы
