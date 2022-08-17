@@ -16,7 +16,7 @@
 - Скачать [docker](https://www.docker.com/)
 - Скачать [python](https://www.python.org/downloads/)
 - Клонировать [репозиторий](https://github.com/tquality-education-exam/docker-kits) командой git clone
-- Выполнить все действия из инструкции к предыдущему файлу
+- Выполнить все действия из инструкции в репе из предыдущего шага
 - Установить расширения для python из файла requierments.txt командой pip install -r requirements.txt 
 - Настроить [test_data](https://github.com/tquality-education/m.ivanyuk/blob/seventh_task/tests/test_data/test_data.json)
 
