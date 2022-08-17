@@ -1,4 +1,5 @@
 {"project_name": "last_task",
 "test_name": "test Mark",
 "method_name": "unknown method",
-"env": "tomcat/mysql"}
+"env": "tomcat/mysql",
+"variant": "2"}

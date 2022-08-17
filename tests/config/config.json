@@ -3,7 +3,7 @@
   "host_ui": "http://login:password@localhost:9090/web/",
   "browser": "chrome",
   "lang": "en",
-  "implicitly_wait_sec": 0,
+  "implicitly_wait_sec": 3,
   "page_load_timeout_sec": 10,
   "script_timeout_sec": 10,
   "explicitly_wait_sec": 10

@@ -1,10 +1,12 @@
 from framework.pages.base_page import BasePage
 from framework.elements.button import Button
-from framework.elements.text_box import TextBox
 from framework.elements.text import Text
+from framework.utils.dataset_parser import DataSetParser
 
 
 class ProjectsPage(BasePage):
+
+    DATA = DataSetParser().get_dataset()
 
     nexage_button = Button('xpath', '//a[@href="allTests?projectId=1"]', 'nex_button')
     add_button = Button('xpath', '//a[@class="btn btn-xs btn-primary pull-right"]', 'add_button')
@@ -23,7 +25,7 @@ class ProjectsPage(BasePage):
         self.add_button.click()
 
     def check_variant(self):
-        return '2' in self.footer.get_text()
+        return self.DATA['variant'] in self.footer.get_text()
 
     def count_projects(self):
         return self.list_of_projects.get_elements_count()

@@ -7,8 +7,8 @@ CONFIG = ConfigParser().get_config()
 
 
 @pytest.fixture(scope='session')
-def start_session():
+def pytest_session_finish(request):
     browser = Browser()
-    browser.set_up_driver()
-    browser.set_url(CONFIG['host_ui'])
-
+    def quit():
+        browser.quit()
+    request.addfinalizer(quit)

@@ -24,3 +24,6 @@ class Table(BaseElement):
         for name in names_path.get_elements():
             names.append(name.text)
         return names
+
+    def row_count(self):
+        return len(self.get_elements())

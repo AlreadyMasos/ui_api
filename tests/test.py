@@ -8,11 +8,14 @@ from endpoints.AddScreenshot import AddScreenshot
 from page_objects.projectsPage import ProjectsPage
 from page_objects.nexagePage import NexagePage
 from page_objects.addProjectPage import AddProjectPage
+from page_objects.NewProjectPage import NewProjectPage
+from tests.config.conftest import pytest_session_finish
+
 
 CONFIG = ConfigParser().get_config()
 
 
-def test():
+def test(pytest_session_finish):
     token = Token().get_token()
     assert token != '0', 'token not created'
     browser = Browser()
@@ -27,12 +30,11 @@ def test():
     json_nexage_project = firstProjJson()
     nex_Page = NexagePage()
     assert nex_Page.check_if_dates_sorted(), 'dates sorted not correctly'
-    assert nex_Page.check_if_data_correct(json_nexage_project.find_test_names())
+    assert nex_Page.check_if_data_correct(json_nexage_project.find_test_names()), 'wrong test data'
     browser.back_page()
     projects_page.click_add_button()
     browser.switch_new_window()
     add_project_page = AddProjectPage()
-    print(add_project_page.insert_project_name())
     add_project_page.save_project()
     assert add_project_page.check_success(), 'project not saved'
     browser.switch_to_window()
@@ -42,3 +44,4 @@ def test():
     test_id = CreateTest().create_test()
     AddLogs().add_logs(test_id)
     AddScreenshot().add_screenshot(test_id)
+    assert NewProjectPage().check_test_add(), 'test not added without refresh'
