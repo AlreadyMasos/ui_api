@@ -10,7 +10,7 @@ from framework.browser.browser import Browser
 from framework.constants import screenshots
 from framework.utils.datetime_util import DatetimeUtil
 from framework.utils.logger import Logger
-
+from framework.utils.file_util import File
 
 class Screenshooter:
     __session_dir = 'resources'
@@ -56,3 +56,8 @@ class Screenshooter:
         result_image = Image.open(save_screen_path)
         # Logger.info(VisualRecord(screen_name, result_image))
         return save_screen_path
+
+    @staticmethod
+    def create_screenshot_string():
+        path = Screenshooter().take_screenshot()
+        return File().convert_file_to_base64(path)

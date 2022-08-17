@@ -18,7 +18,9 @@ class AddProjectPage(BasePage):
 
     def insert_project_name(self):
         self.input_pr_name.wait_for_clickable()
-        self.input_pr_name.send_text(set_random_string())
+        name = set_random_string()
+        self.input_pr_name.send_text(name)
+        return name
 
     def save_project(self):
         self.save_button.click()
