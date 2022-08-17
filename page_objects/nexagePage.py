@@ -7,6 +7,7 @@ class NexagePage(BasePage):
 
     test_table = Table('xpath', '//table[@class="table"]', 'test_table')
 
+
     def __init__(self):
         super().__init__(self.test_table.get_search_condition(),
                          self.test_table.get_locator(),

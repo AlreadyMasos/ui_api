@@ -26,3 +26,4 @@ class AddProjectPage(BasePage):
     def check_success(self):
         self.success_text.wait_for_is_visible()
         return self.success_text.is_exist()
+    

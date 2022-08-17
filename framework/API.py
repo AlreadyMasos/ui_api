@@ -14,11 +14,8 @@ class API:
     def get(self, endpoint):
         self._response = requests.get(self.cfg['host_api'] + endpoint)
 
-    def post(self,  endpoint, link=1, cookies=None):
-        if link == 1:
-            self._response = requests.post(url=self.cfg['host_api']+endpoint, cookies=cookies)
-        if link == 2:
-            self._response = requests.post(endpoint, cookies=cookies)
+    def post(self,  endpoint, cookies=None, data=None):
+        self._response = requests.post(url=self.cfg['host_api']+endpoint, cookies=cookies, data=data)
 
     def get_status_code(self):
         return self._response.status_code
@@ -37,3 +34,6 @@ class API:
 
     def get_cookie(self):
         return self._response.text.upper()
+
+    def get_text(self):
+        return self._response.text
